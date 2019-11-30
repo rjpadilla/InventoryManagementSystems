@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="486.0" prefWidth="495.0" stylesheets="@my_stylesheet.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inventorymanagementsystems.AddPartController">
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="97.0" layoutY="413.0" stroke="#00000001" strokeType="INSIDE" width="495.0">
+         <fill>
+            <LinearGradient endX="0.5238095238095237" endY="0.5523809523809524" startX="0.5238095238095238">
+               <stops>
+                  <Stop color="#615151" />
+                  <Stop color="#1e90ff00" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <HBox layoutX="170.0" layoutY="436.0" prefHeight="52.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Button fx:id="saveButton" mnemonicParsing="false" onAction="#saveButtonPushed" prefHeight="48.0" prefWidth="90.0" text="Save" />
+            <Button mnemonicParsing="false" onAction="#changeScreenButtonPushed" prefHeight="48.0" prefWidth="90.0" text="Cancel" />
+         </children>
+      </HBox>
+      <HBox layoutX="39.0" layoutY="44.0" prefHeight="23.0" prefWidth="223.0" spacing="30.0">
+         <children>
+            <RadioButton fx:id="inHouseRadio" mnemonicParsing="false" onAction="#radioButtonPushed" prefHeight="34.0" prefWidth="87.0" text="In-House" />
+            <RadioButton fx:id="outSourceRadio" mnemonicParsing="false" onAction="#radioButtonPushed" prefHeight="34.0" prefWidth="87.0" text="OutSourced" />
+         </children>
+      </HBox>
+      <Label layoutX="46.0" prefHeight="36.0" prefWidth="56.0" text="Add Part">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <VBox layoutX="46.0" layoutY="88.0" prefHeight="422.0" prefWidth="141.0" spacing="30.0">
+         <children>
+            <Label text="ID" />
+            <Label text="Name" />
+            <Label text="Inventory" />
+            <Label text="Price/Cost" />
+            <Label text="Max" />
+            <Label fx:id="choiceLabel" text="Select your choice!" />
+         </children>
+      </VBox>
+      <TextField fx:id="idTextField" disable="true" layoutX="187.0" layoutY="80.0" prefHeight="34.0" prefWidth="149.0" promptText="Auto Gen - Disable" />
+      <Label layoutX="315.0" layoutY="274.0" text="Min" />
+      <TextField fx:id="maxTextField" layoutX="187.0" layoutY="265.0" prefHeight="34.0" prefWidth="109.0" promptText="Max" />
+      <TextField fx:id="companyTextField" disable="true" layoutX="187.0" layoutY="315.0" prefHeight="34.0" prefWidth="149.0" />
+      <TextField fx:id="priceTextField" layoutX="187.0" layoutY="221.0" prefHeight="34.0" prefWidth="149.0" promptText="Price/Cost" />
+      <TextField fx:id="inventoryTextField" layoutX="187.0" layoutY="175.0" prefHeight="34.0" prefWidth="149.0" promptText="Inv" />
+      <TextField fx:id="nameTextField" layoutX="187.0" layoutY="128.0" prefHeight="34.0" prefWidth="149.0" promptText="Part Name" />
+      <TextField fx:id="minTextField" layoutX="347.0" layoutY="266.0" prefHeight="34.0" prefWidth="109.0" promptText="Min" />
+      <Line endX="277.0" layoutX="218.0" layoutY="413.0" startX="-219.0" stroke="#ffcc66" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="34.0" layoutY="1.0" stroke="#00000001" strokeType="INSIDE" width="495.0">
+         <fill>
+            <LinearGradient endX="0.5238095238095237" endY="0.5523809523809524" startX="0.5238095238095238">
+               <stops>
+                  <Stop color="#615151" />
+                  <Stop color="#1e90ff00" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Line endX="277.0" layoutX="218.0" layoutY="33.0" startX="-219.0" stroke="#ffcc66" />
+      <HBox onMouseDragged="#draggedWindowBar" onMousePressed="#pressCurrentCordinate" prefHeight="34.0" prefWidth="495.0" spacing="5.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#changeMinimizeButtonPushed" text="_" />
+            <Button mnemonicParsing="false" onAction="#changeExitButtonPushed" text="X" />
+         </children>
+         <padding>
+            <Insets left="435.0" top="4.0" />
+         </padding>
+      </HBox>
+   </children>
+</AnchorPane>
