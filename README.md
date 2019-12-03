@@ -7,6 +7,7 @@ In the main screen the user has the option to add, modify, search, and delete pa
 
 # Add a part
 Clicking on the Add button on the Parts screen direct you to the Add Part screen. In here you can specify the name, inventory size, the price per unit, and the part's source identifier.
+
 ![Add Part](https://raw.githubusercontent.com/rjpadilla/InventoryManagementSystems/master/screenshots/addpartscreen.jpg  "Add Part") 
 
 # Modify or delete a part
