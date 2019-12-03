@@ -1,6 +1,5 @@
 /**
- * Raul Padilla
- * C482 Software 1
+ * Raul Padilla 
  * ModifyProductController Class
  **** Exception Control Set 1(entering an inventory value that exceeds the minimum or maximum value for that part or product) on line 180-183 ****
  **** Exception Control Set 2(ensuring that a product must have a name, price, category, and inventory level) on line 186-192 ****
