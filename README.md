@@ -19,5 +19,5 @@ Clicking on the Add button on the Products screen will direct you to the Add Pro
 ![Add Product](https://raw.githubusercontent.com/rjpadilla/InventoryManagementSystems/master/screenshots/addproductscreen.jpg  "Add Product") 
 
 # Modify or delete a product
-D. Modifing or deleting a product is done the same way as selecting the product and clicking on the modify/delete button in the Products.
+ Modifing or deleting a product is done the same way as selecting the product and clicking on the modify/delete button in the Products.
 ![Modify/Delete Product](https://raw.githubusercontent.com/rjpadilla/InventoryManagementSystems/master/screenshots/selectedproduct.jpg "Modify/Delete Product") 
